@@ -17,7 +17,8 @@ export const counterSlice = createSlice({
     },
     clearInputValue:(state)=>{
         state.inputValue=''
-
+        state.word=0,
+        state.character=0
     },
 
   },
