@@ -1,6 +1,10 @@
+import { useDispatch } from "react-redux";
+import { clearInputValue } from "../features/counter/counterSlice";
+
 function ClearButton() {
+    const dispatch= useDispatch()
     return ( 
-        <button>Clear</button>
+        <button onClick={()=>dispatch(clearInputValue())}>Clear</button>
      );
 }
 

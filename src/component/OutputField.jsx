@@ -1,6 +1,6 @@
-function OutputField({type}) {
+function OutputField({type, count}) {
     return ( 
-        <span>{type}: 0</span>
+        <span>{type}: {count}</span>
      );
 }
 

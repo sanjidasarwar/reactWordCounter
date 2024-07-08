@@ -1,8 +1,12 @@
+import { useState } from "react";
 import ClearButton from "../component/ClearButton";
 import OutputField from "../component/OutputField";
 import Textarea from "../component/Textarea";
+import { useSelector } from "react-redux";
 
 function WordCounter() {
+    const {word, character} = useSelector(state=> state.counter)
+
     return ( 
         <div className="container">
             <h1>Word Counter</h1>
@@ -12,8 +16,8 @@ function WordCounter() {
                 <ClearButton />
             </div>
             <div>
-                <OutputField type="Word" />
-                <OutputField type="Character" />
+                <OutputField type="Word" count={word} />
+                <OutputField type="Character" count={character} />
             </div>
         </div>
      );

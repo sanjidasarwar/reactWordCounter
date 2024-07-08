@@ -1,13 +1,14 @@
-import './App.css'
-import WordCounter from './pages/WordCounter'
+import { Provider } from "react-redux";
+import "./App.css";
+import WordCounter from "./pages/WordCounter";
+import { store } from "./app/store";
 
 function App() {
-
   return (
-    <>
-     <WordCounter />
-    </>
-  )
+    <Provider store={store}>
+      <WordCounter />
+    </Provider>
+  );
 }
 
-export default App
+export default App;
