@@ -9,7 +9,7 @@ function Textarea() {
   }
     return ( 
         <>
-        <textarea name="message" id="message" cols="30" rows="10" value={inputValue} onChange={(e)=>handleChange(e)}></textarea>
+        <textarea className="form-control" name="message" id="message" cols="30" rows="10" value={inputValue} onChange={(e)=>handleChange(e)}></textarea>
         </>
      );
 }

@@ -15,7 +15,7 @@ function WordCounter() {
             <div>
                 <ClearButton />
             </div>
-            <div>
+            <div className="output-field">
                 <OutputField type="Word" count={word} />
                 <OutputField type="Character" count={character} />
             </div>
